@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.recycler.widget.RecyclerView
-import comexample.userlistapp.databinding.ItemUserBinding
+import com.example.userlistapp.databinding.ItemUserBinding
 import com.example.userlistapp.model.User
 
 class UserAdapter(private val userList: List<User>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
@@ -13,6 +13,7 @@ class UserAdapter(private val userList: List<User>) : RecyclerView.Adapter<UserA
         fun bind(user: User) {
             binding.textViewName.text = user.name
             binding.textViewEmail.text = user.email
+            binding.textViewPhone.text = user.phone
         }
     }
 
